@@ -1,0 +1,38 @@
+# Out-of-tree CMake builds and local installs.
+/build*/
+/cmake-build-*/
+/out/
+/install/
+/stage/
+CMakeCache.txt
+CMakeFiles/
+Testing/
+_deps/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+Makefile
+build.ninja
+.ninja_deps
+.ninja_log
+*.so
+*.so.*
+*.a
+*.o
+
+# Intel firmware is downloaded into the build directory, not redistributed here.
+*.mvcmd
+
+# Local captures, editor state, and temporary files.
+*.pgm
+*.raw
+*.csv
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store

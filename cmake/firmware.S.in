@@ -1,0 +1,12 @@
+/* Intel firmware, obtained separately at configure time. */
+.section .rodata
+.balign 16
+.global t26x_firmware_start
+.hidden t26x_firmware_start
+t26x_firmware_start:
+.incbin "@LIBT26X_FIRMWARE_ASM_PATH@"
+.global t26x_firmware_end
+.hidden t26x_firmware_end
+t26x_firmware_end:
+.size t26x_firmware_start, t26x_firmware_end - t26x_firmware_start
+.section .note.GNU-stack,""

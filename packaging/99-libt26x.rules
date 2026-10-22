@@ -1,0 +1,4 @@
+# T265 bootloader and running firmware. Reconnect after installing these rules.
+# Apply uaccess explicitly because this file runs after 73-seat-late.rules.
+SUBSYSTEM=="usb", ATTR{idVendor}=="03e7", ATTR{idProduct}=="2150", GROUP="plugdev", MODE="0660", TAG+="uaccess", RUN{builtin}+="uaccess"
+SUBSYSTEM=="usb", ATTR{idVendor}=="8087", ATTR{idProduct}=="0b37", GROUP="plugdev", MODE="0660", TAG+="uaccess", RUN{builtin}+="uaccess"

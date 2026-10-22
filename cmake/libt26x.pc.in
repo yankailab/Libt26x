@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=@LIBT26X_PC_LIBDIR@
+includedir=@LIBT26X_PC_INCLUDEDIR@
+
+Name: Libt26x
+Description: Minimal Linux USB SDK for Intel RealSense T265 tracking cameras
+Version: @PROJECT_VERSION@
+Libs: -L${libdir} -lt26x
+Cflags: -I${includedir}
